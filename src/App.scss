@@ -15,6 +15,11 @@ html, body {
             width: $content_width;
             display: flex;
             justify-self: center;
+            height: 100%;
+
+            .highlight-text {
+                color: $highlight;
+            }
         }
     }
 }

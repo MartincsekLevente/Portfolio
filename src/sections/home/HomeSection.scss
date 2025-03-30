@@ -1,0 +1,32 @@
+#home {
+    width: 100%;
+    height: 100%;
+    padding-top: 9vh;
+
+    .home-section-container {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .home-section-title-container {
+
+            .home-section-title {
+                font-size: 2.5vw;
+            }
+
+            .home-section-subtitle {
+                font-size: 2vw;
+            }
+        }
+
+        .home-section-picture-container {
+
+            .home-section-picture {
+                width: 20vw;
+                border-radius: 3vw;
+            }
+        }
+    }
+}

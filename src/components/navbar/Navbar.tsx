@@ -9,6 +9,7 @@ export default function Navbar() {
                 <div className="navbar-items">
                     <NavbarItem title="About"></NavbarItem>
                     <NavbarItem title="Skills"></NavbarItem>
+                    <NavbarItem title="Experience"></NavbarItem>
                     <NavbarItem title="Projects"></NavbarItem>
                     <NavbarItem title="Contact"></NavbarItem>
                 </div>
