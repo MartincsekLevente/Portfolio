@@ -1,3 +1,37 @@
+@use "../../theme/variables" as *;
+
 #about {
-    height: 500px;
-}
+    height: 100vh;
+
+    .about-section-container {
+        width: inherit;
+        height: inherit;
+        padding-top: 7vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .about-section-title {
+            font-size: $font_size_mediumbig;
+            margin-bottom: 10vh;
+        }
+
+        .about-me-card-container {
+            align-self: start;
+            display: flex;
+
+            .about-me-card {
+                width: 30vw;
+                padding: 1.5vw;
+                border: 1px solid #25404a;
+                box-shadow: 0 0 10px 10px #315562;
+                border-radius: 20px;
+                background: linear-gradient(in oklab, #152a32, #203A43);
+
+                .about-text {
+                    font-size: $font_size_small;
+                }
+            }
+        }
+    }

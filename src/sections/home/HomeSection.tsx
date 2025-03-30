@@ -6,7 +6,7 @@ export default function HomeSection() {
             <div className="home-section-container">
                 <div className="home-section-title-container">
                     <div className="home-section-title">
-                        Hey, I am Levi! 👋
+                        Hey, I am <span className="highlight-text">Levi</span> 👋
                     </div>
                     <hr></hr>
                     <div className="home-section-subtitle">
