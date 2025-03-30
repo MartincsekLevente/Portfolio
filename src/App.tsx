@@ -1,10 +1,11 @@
 import './App.css'
+import { Button } from "@mantine/core";
 
 export default function App() {
 
     return (
         <>
-            Hello world!
+            <Button>test</Button>
         </>
     )
 }
