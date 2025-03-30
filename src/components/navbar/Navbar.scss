@@ -1,0 +1,22 @@
+@use "../../theme/variables" as *;
+
+.navbar-bg {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid $primary;
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+        width: $content_width;
+
+        .navbar-items {
+            display: flex;
+            gap: 2vw;
+        }
+    }
+}
+
