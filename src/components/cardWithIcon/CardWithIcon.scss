@@ -1,0 +1,24 @@
+@use "../../theme/variables" as *;
+
+.card-with-icon-container {
+    margin-left: 4vw;
+    font-size: $font_size_medium;
+    cursor: pointer;
+
+    .card-overlay {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        display: flex;
+        align-items: center;
+        border: 1px solid #25404a;
+        box-shadow: 0 0 8px 5px #315562;
+        border-radius: 1.5vw;
+        gap: 0.5vw;
+        background: linear-gradient(in oklab, #152a32, #203A43);
+
+
+        .card-icon {
+            display: flex;
+        }
+    }
+}

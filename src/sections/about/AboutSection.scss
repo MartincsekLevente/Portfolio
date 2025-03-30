@@ -33,5 +33,11 @@
                     font-size: $font_size_small;
                 }
             }
+
+            .about-me-small-cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
         }
     }
