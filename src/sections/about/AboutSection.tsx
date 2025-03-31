@@ -2,8 +2,11 @@ import './AboutSection.scss';
 import CardWithIcon from "../../components/cardWithIcon/CardWithIcon.tsx";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
+import { useState } from "react";
 
 export default function AboutSection() {
+    const [cardHovered, setCardHovered] = useState(false);
+
     return (
         <section id="about">
             <div className="about-section-container">
@@ -11,7 +14,9 @@ export default function AboutSection() {
                     About me
                 </div>
                 <div className="about-me-card-container">
-                    <div className="about-me-card">
+                    <div className={`about-me-card ${cardHovered ? "card-hovered" : ""}`}
+                         onMouseEnter={() => setCardHovered(true)}
+                         onMouseLeave={() => setCardHovered(false)}>
                         <div className="about-text">
                             As a <span className="highlight-text">frontend developer with 2+ years of experience</span>,
                             I confidently work both in a team and

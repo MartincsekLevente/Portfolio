@@ -16,6 +16,9 @@
         gap: 0.5vw;
         background: linear-gradient(in oklab, #152a32, #203A43);
 
+        &.hovered {
+            box-shadow: 0 0 8px 5px #638fa0;
+        }
 
         .card-icon {
             display: flex;

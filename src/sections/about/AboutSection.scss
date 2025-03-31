@@ -29,6 +29,10 @@
                 border-radius: 20px;
                 background: linear-gradient(in oklab, #152a32, #203A43);
 
+                &.card-hovered {
+                    box-shadow: 0 0 8px 5px #638fa0;
+                }
+
                 .about-text {
                     font-size: $font_size_small;
                 }
