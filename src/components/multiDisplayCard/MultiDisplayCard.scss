@@ -1,0 +1,12 @@
+@use "../../theme/variables" as *;
+
+.multi-display-card-container {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 15px;
+
+    .multi-display-card-title {
+        font-size: $font_size_medium;
+    }
+}

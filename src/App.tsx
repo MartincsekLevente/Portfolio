@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar.tsx";
 import HomeSection from "./sections/home/HomeSection.tsx";
 import AboutSection from "./sections/about/AboutSection.tsx";
 import SkillsSection from "./sections/skills/SkillsSection.tsx";
+import ExperienceSection from "./sections/experience/ExperienceSection.tsx";
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
                 <HomeSection></HomeSection>
                 <AboutSection></AboutSection>
                 <SkillsSection></SkillsSection>
+                <ExperienceSection></ExperienceSection>
             </div>
         </>
     )
