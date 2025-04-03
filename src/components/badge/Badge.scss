@@ -15,9 +15,13 @@
         font-size: $font_size_small;
         padding: 0 1vw 0 1vw;
 
+        &.hovered {
+            border: 2px solid $highlight;
+        }
+
         .badge-text {
             border-radius: 0.3vw;
-            color: #4a9cc6;
+            color: $highlight;
             font-family: Jura, "sans-serif";
             font-weight: 800;
         }
