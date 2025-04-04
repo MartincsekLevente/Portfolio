@@ -4,6 +4,7 @@ import HomeSection from "./sections/home/HomeSection.tsx";
 import AboutSection from "./sections/about/AboutSection.tsx";
 import SkillsSection from "./sections/skills/SkillsSection.tsx";
 import ExperienceSection from "./sections/experience/ExperienceSection.tsx";
+import ProjectsSection from "./sections/projects/ProjectsSection.tsx";
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
                 <AboutSection></AboutSection>
                 <SkillsSection></SkillsSection>
                 <ExperienceSection></ExperienceSection>
+                <ProjectsSection></ProjectsSection>
             </div>
         </>
     )

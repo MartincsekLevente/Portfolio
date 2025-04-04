@@ -13,7 +13,7 @@ export default function ExperienceSection() {
                         <defs>
                             <linearGradient id="grad" x1="0" x2="0" y1="0" y2="1">
                                 <stop offset="80%" stopColor="#4a9cc6"/>
-                                <stop offset="100%" stopColor="rgba(27, 32, 71, 0.0)"/>
+                                <stop offset="96%" stopColor="#4a9cc6" stopOpacity="0"/>
                             </linearGradient>
                         </defs>
                         <rect id="rect1" x="49.5" y="3" width="1" height="100" fill="url('#grad')"/>
