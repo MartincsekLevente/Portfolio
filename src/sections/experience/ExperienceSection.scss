@@ -14,19 +14,54 @@
 
         .experience-section-title {
             font-size: $font_size_mediumbig;
-            margin-bottom: 10vh;
+            margin-bottom: 4vh;
         }
 
         .experience-line-container {
             width: 100%;
-            height: 40vh;
+            height: 100vh;
             position: absolute;
             top: 20vh;
             z-index: -1;
+
+            .experience-line {
+                position: absolute;
+                height: inherit;
+                width: inherit;
+            }
+
+            .experience-line-point-1 {
+                width: 2vw;
+                height: 2vw;
+                background-color: #4a9cc6;
+                border: 0.15vw solid #0f182b;
+                border-radius: 50%;
+                position: absolute;
+                left: calc(50% - 1vw);
+            }
+
+            .experience-line-point-2 {
+                width: 2vw;
+                height: 2vw;
+                background-color: #4a9cc6;
+                border: 0.15vw solid #0f182b;
+                border-radius: 50%;
+                position: absolute;
+                top: 40vh;
+                left: calc(50% - 1vw);
+            }
         }
 
         .multi-display-cards-container {
             display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 4vw;
+
+            > *:nth-child(even) {
+                align-self: end;
+            }
+
         }
 
     }

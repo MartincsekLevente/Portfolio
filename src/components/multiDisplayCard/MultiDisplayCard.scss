@@ -2,11 +2,42 @@
 
 .multi-display-card-container {
     display: flex;
-    border: 3px solid black;
-    border-radius: 20px;
-    padding: 15px;
+    flex-direction: column;
+    width: 32vw;
+    border: 0.15vw solid #1b2047;
+    border-radius: 0.5vw;
 
-    .multi-display-card-title {
-        font-size: $font_size_medium;
+    .multi-display-card-overlay {
+        border: 0.15vw solid #0f182b;
+        border-radius: 0.5vw;
+        background: linear-gradient(to right, #151f53, #1b2047);
+        padding: 1vw;
+
+        .multi-display-card-title {
+            font-size: $font_size_medium;
+        }
+
+        .multi-display-card-subtitle {
+            font-size: $font_size_small;
+            padding-left: 0.6vw;
+        }
+
+        .multi-display-card-description {
+            font-size: calc($font_size_small - 0.1vw);
+            padding-left: 0.6vw;
+            color: grey;
+        }
+
+        .multi-display-card-list-container {
+            font-size: $font_size_text;
+
+            .multi-display-card-list-item {
+
+                &:not(:last-child) {
+                    margin-bottom: 0.5vh;
+                }
+            }
+        }
     }
+
 }
