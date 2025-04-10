@@ -13,6 +13,57 @@
 
         .projects-section-title {
             font-size: $font_size_mediumbig;
+            margin-bottom: 10vh;
+        }
+
+        .projects-showcase-container {
+            border-radius: 1vw;
+            border: 0.2vw solid #1b2047;
+
+            .projects-showcase-overlay {
+                position: relative;
+                width: 50vw;
+                height: 52vh;
+                border-radius: 1vw;
+                border: 0.2vw solid #0f182b;
+                background: linear-gradient(to right, #151f53, #1b2047);
+            }
+
+            .project-title {
+                position: absolute;
+                left: 2vw;
+                top: 3vh;
+                font-size: 1.5vw;
+            }
+
+            .project-description {
+                position: absolute;
+                left: 2vw;
+                bottom: 3vh;
+                font-size: $font_size_text;
+            }
+
+            .projects-showcase-left-arrow {
+                position: absolute;
+                font-size: 6vw;
+                top: 16.5vh;
+                cursor: pointer;
+            }
+
+            .projects-showcase-right-arrow {
+                position: absolute;
+                font-size: 6vw;
+                top: 16.5vh;
+                left: 46.5vw;
+                cursor: pointer;
+            }
+
+            .projects-stack-container {
+                display: flex;
+                justify-content: flex-end;
+                padding: 1vw 1vw 0 0;
+                gap: 0.5vw;
+            }
         }
     }
 }

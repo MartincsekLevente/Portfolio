@@ -1,0 +1,27 @@
+@use "../../theme/variables" as *;
+
+.stack-card-container {
+    border-radius: 0.3vw;
+    border: 0.15vw solid #0f182b;
+
+    .stack-card-overlay {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 0.3vw;
+        border: 0.15vw solid #1b2047;
+        font-size: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+        background: linear-gradient(to right, #151f53, #1b2047);
+
+        &.hovered {
+            border: 0.15vw solid $highlight;
+        }
+
+        .stack-card-icon {
+            display: flex;
+        }
+    }
+}
