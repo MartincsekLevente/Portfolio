@@ -48,6 +48,7 @@
                 font-size: 6vw;
                 top: 16.5vh;
                 cursor: pointer;
+                user-select: none;
             }
 
             .projects-showcase-right-arrow {
@@ -56,6 +57,7 @@
                 top: 16.5vh;
                 left: 46.5vw;
                 cursor: pointer;
+                user-select: none;
             }
 
             .projects-stack-container {
