@@ -11,7 +11,10 @@ export const PROJECTS: ProjectModel[] =
                 <FaReact></FaReact>,
                 <SiTypescript></SiTypescript>,
                 <FaSass></FaSass>
-            ]
+            ],
+            bgImgUrl: "/bg-avatar-creator.png",
+            githubUrl: "https://github.com/MartincsekLevente/Portfolio",
+            websiteUrl: "ates"
         },
         {
             id: "1",
@@ -20,7 +23,10 @@ export const PROJECTS: ProjectModel[] =
                 <FaReact></FaReact>,
                 <SiTypescript></SiTypescript>,
                 <FaCss3></FaCss3>
-            ]
+            ],
+            bgImgUrl: "/bg-mars-weather.png",
+            githubUrl: "https://github.com/MartincsekLevente/React-MarsWeather",
+            websiteUrl: null
         },
         {
             id: "2",
@@ -30,6 +36,9 @@ export const PROJECTS: ProjectModel[] =
                 <SiTypescript></SiTypescript>,
                 <SiMantine></SiMantine>,
                 <FaCss3></FaCss3>
-            ]
+            ],
+            bgImgUrl: "/bg-avatar-creator.png",
+            githubUrl: "https://github.com/MartincsekLevente/React-AvatarCreator",
+            websiteUrl: null
         }
     ]

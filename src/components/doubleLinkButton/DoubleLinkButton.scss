@@ -1,0 +1,31 @@
+@use "../../theme/variables" as *;
+
+.double-link-button-container {
+    display: flex;
+    font-size: $font_size_small;
+    border-radius: 0.3vw;
+    border: 0.15vw solid #0f182b;
+    background: linear-gradient(to right, #151f53, #1b2047);
+
+    .double-link-button-text {
+        padding: 0 0.5vw 0 0.5vw;
+    }
+
+    .project-open-url-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 0.4vw 0 0.4vw;
+        background: linear-gradient(to right, #151f53, #1b2047);
+
+        &:first-child {
+            border-right: 0.15vw solid #0f182b;
+            border-radius: 0.3vw 0 0 0.3vw;
+        }
+
+        &:last-child {
+            border-left: 0.15vw solid #0f182b;
+            border-radius: 0 0.3vw 0.3vw 0;
+        }
+    }
+}

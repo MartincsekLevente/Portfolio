@@ -2,6 +2,7 @@ import "./ProjectsSection.scss";
 import StackCard from "../../components/stackCard/StackCard.tsx";
 import { useState } from "react";
 import { PROJECTS } from "../../constants/projects.tsx";
+import DoubleLinkButton from "../../components/doubleLinkButton/DoubleLinkButton.tsx";
 
 export default function ProjectsSection() {
     const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
@@ -41,8 +42,15 @@ export default function ProjectsSection() {
                                 return <StackCard key={crypto.randomUUID()} icon={currentIcon}></StackCard>
                             })}
                         </div>
-                        <div className="project-description">
-                            Test Description goes here: Github projects with things and stuff
+                        <div className="project-image-container">
+                            <img className="project-image" src={PROJECTS[currentProjectIndex].bgImgUrl}
+                                 alt="missingBG"></img>
+                        </div>
+                        <div className="project-links">
+                            <DoubleLinkButton
+                                githubLink={PROJECTS[currentProjectIndex].githubUrl}
+                                websiteLink={PROJECTS[currentProjectIndex].websiteUrl}>
+                            </DoubleLinkButton>
                         </div>
                     </div>
                 </div>
