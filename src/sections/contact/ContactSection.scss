@@ -1,0 +1,41 @@
+@use "../../theme/variables" as *;
+
+#contact {
+    height: 50vh;
+    padding-top: 10vh;
+
+    .contact-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact-section-description {
+            font-size: $font_size_small;
+            margin-bottom: 4vh;
+        }
+
+        .contact-button-container {
+            display: flex;
+            width: fit-content;
+            border: 0.15vw solid #1b2047;
+            border-radius: 1vw;
+            background: linear-gradient(to right, #151f53, #1b2047);
+            cursor: pointer;
+
+            .contact-button {
+                display: flex;
+                align-items: center;
+                gap: 0.5vw;
+                border-radius: 1vw;
+                border: 0.15vw solid #0f182b;
+                padding: 1vh 1vw 1vh 1vw;
+                font-size: 1.5vw;
+
+                &.hovered {
+                    border: 0.15vw solid $highlight;
+                }
+            }
+        }
+
+    }
+}
