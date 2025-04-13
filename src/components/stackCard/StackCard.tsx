@@ -1,22 +1,29 @@
 import './StackCard.scss';
 import { ReactNode, useState } from "react";
+import { Tooltip } from "@mantine/core";
 
 interface StackCardProps {
-    icon: ReactNode;
+    name: string,
+    icon: ReactNode
 }
 
-export default function StackCard({icon}: StackCardProps) {
+export default function StackCard({name, icon}: StackCardProps) {
     const [hovered, setHovered] = useState(false)
 
     return (
-        <div className="stack-card-container"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}>
-            <div className={`stack-card-overlay ${hovered ? 'hovered' : null}`}>
-                <div className="stack-card-icon">
-                    {icon}
+        <Tooltip
+            style={{'--tooltip-color': 'black'}}
+            label={name}
+            color="#4a9cc6">
+            <div className="stack-card-container"
+                 onMouseEnter={() => setHovered(true)}
+                 onMouseLeave={() => setHovered(false)}>
+                <div className={`stack-card-overlay ${hovered ? 'hovered' : null}`}>
+                    <div className="stack-card-icon">
+                        {icon}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Tooltip>
     );
 }

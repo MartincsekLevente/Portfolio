@@ -1,5 +1,9 @@
 @use "../../theme/variables" as *;
 
+.stack-card-tooltip {
+    --tooltip-color	: black;
+}
+
 .stack-card-container {
     border-radius: 0.3vw;
     border: 0.15vw solid #0f182b;

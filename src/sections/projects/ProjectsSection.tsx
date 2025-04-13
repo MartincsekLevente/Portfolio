@@ -28,18 +28,21 @@ export default function ProjectsSection() {
                 </div>
                 <div className="projects-showcase-container">
                     <div className="projects-showcase-overlay">
-                        <div className="projects-showcase-left-arrow"
-                             onClick={() => decreaseCurrentProjectIndex()}
-                        >&lt;</div>
-                        <div className="projects-showcase-right-arrow"
-                             onClick={() => increaseCurrentProjectIndex()}
-                        >&gt;</div>
+                        {PROJECTS[currentProjectIndex - 1] ?
+                            <div className="projects-showcase-left-arrow"
+                                 onClick={() => decreaseCurrentProjectIndex()}
+                            >&lt;</div> : null}
+                        {PROJECTS[currentProjectIndex + 1] ?
+                            <div className="projects-showcase-right-arrow"
+                                 onClick={() => increaseCurrentProjectIndex()}
+                            >&gt;</div> : null}
                         <div className="project-title">
                             {PROJECTS[currentProjectIndex].title}
                         </div>
                         <div className="projects-stack-container">
-                            {PROJECTS[currentProjectIndex].stackListIcons.map((currentIcon) => {
-                                return <StackCard key={crypto.randomUUID()} icon={currentIcon}></StackCard>
+                            {PROJECTS[currentProjectIndex].stackList.map((currentStack) => {
+                                return <StackCard key={crypto.randomUUID()} icon={currentStack.icon}
+                                                  name={currentStack.name}></StackCard>
                             })}
                         </div>
                         <div className="project-image-container">
