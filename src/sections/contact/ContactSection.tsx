@@ -22,6 +22,9 @@ export default function ContactSection() {
                     </div>
                 </div>
             </div>
+            <div className="footer">
+                copyright © 2025
+            </div>
         </section>
     );
 }

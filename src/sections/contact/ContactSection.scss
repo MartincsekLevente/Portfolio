@@ -1,6 +1,8 @@
 @use "../../theme/variables" as *;
 
 #contact {
+    display: flex;
+    flex-direction: column;
     height: 50vh;
     padding-top: 10vh;
 
@@ -37,5 +39,15 @@
             }
         }
 
+    }
+
+    .footer {
+        font-size: 0.65vw;
+        width: 100%;
+        display: flex;
+        margin-top: auto;
+        justify-content: center;
+        padding: 1vw 0 1vw 0;
+        border-top: 0.05vw solid white;
     }
 }
