@@ -7,11 +7,11 @@ export default function Navbar() {
             <div className="navbar-container">
                 <div className="home-title">HOME ML</div>
                 <div className="navbar-items">
-                    <NavbarItem title="About"></NavbarItem>
-                    <NavbarItem title="Skills"></NavbarItem>
-                    <NavbarItem title="Experience"></NavbarItem>
-                    <NavbarItem title="Projects"></NavbarItem>
-                    <NavbarItem title="Contact"></NavbarItem>
+                    <NavbarItem title="About" navigateTo="#about"></NavbarItem>
+                    <NavbarItem title="Skills" navigateTo="#skills"></NavbarItem>
+                    <NavbarItem title="Experience" navigateTo="#experience"></NavbarItem>
+                    <NavbarItem title="Projects" navigateTo="#projects"></NavbarItem>
+                    <NavbarItem title="Contact" navigateTo="#contact"></NavbarItem>
                 </div>
             </div>
         </div>
