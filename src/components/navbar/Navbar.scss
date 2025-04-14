@@ -17,6 +17,36 @@
         height: 8vh;
         width: $content_width;
 
+        .navbar-home-title {
+            display: flex;
+            font-size: 3vw;
+            font-family: Jura, "sans-serif";
+            font-weight: bold;
+            user-select: none;
+            align-items: center;
+            line-height: 1;
+            padding-bottom: 0.5vw;
+            cursor: pointer;
+            color: $primary;
+            transition: color 0.5s ease;
+
+            &.hovered {
+                color: #4a9cc6;
+            }
+
+            .navbar-home-title-right {
+                position: relative;
+                left: -0.89vw;
+                color: #4a9cc6;
+                font-size: 3.1vw;
+                transition: color 0.5s ease;
+
+                &.hovered {
+                    color: $primary;
+                }
+            }
+        }
+
         .navbar-items {
             display: flex;
             gap: 2vw;
