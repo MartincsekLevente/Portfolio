@@ -9,17 +9,37 @@
         width: inherit;
         height: inherit;
         display: flex;
-        justify-content: space-between;
         align-items: center;
 
         .home-section-title-container {
 
+            .home-logo {
+                display: flex;
+                font-size: 16vw;
+                font-family: Jura, "sans-serif";
+                font-weight: bold;
+                user-select: none;
+                align-items: center;
+                line-height: 1;
+                padding-bottom: 4vw;
+
+                .home-logo-right {
+                    position: relative;
+                    left: -4.69vw;
+                    color: $highlight;
+                    font-size: 16.1vw;
+                }
+            }
+
             .home-section-title {
                 font-size: $font_size_mediumbig;
+                padding-left: 1.5vw;
             }
 
             .home-section-subtitle {
                 font-size: $font_size_medium;
+                padding-left: 1.5vw;
+                padding-bottom: 2vw;
             }
         }
 
