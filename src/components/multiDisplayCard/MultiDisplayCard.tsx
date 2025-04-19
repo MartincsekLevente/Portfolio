@@ -24,7 +24,7 @@ export default function MultiDisplayCard({title, subtitle, description, textList
                 <div className="multi-display-card-list-container">
                     <ul>
                         {textList ? textList.map((text) => {
-                            return (<li className="multi-display-card-list-item">{text}</li>);
+                            return (<li className="multi-display-card-list-item" key={crypto.randomUUID()}>{text}</li>);
                         }) : null}
                     </ul>
                 </div>
