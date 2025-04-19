@@ -12,14 +12,18 @@
         align-items: center;
         position: relative;
 
-        .skills-section-title {
-            font-size: 3vw;
-            border: 0.3vw solid #211f47;
-            padding: 0.6vw 4vw 0.6vw 4vw;
-            border-radius: 1vw;
-            background: #03002c;
-            color: #8e85be;
-            box-shadow: 0 0 20px 10px #211f47;
+        .skills-section-title-overlay {
+            border: 0.25vw solid #1b2047;
+            border-radius: 0.5vw;
+            margin-top: 4vh;
+
+            .skills-section-title {
+                font-size: 3vw;
+                padding: 0.6vw 4vw 0.6vw 4vw;
+                border: 0.20vw solid #0f182b;
+                border-radius: 0.5vw;
+                background: linear-gradient(to right, #151f53, #1b2047);
+            }
         }
 
         .skill-tree-lines-container {
@@ -33,7 +37,6 @@
                 width: inherit;
                 height: inherit;
                 position: absolute;
-                top: -1px;
             }
         }
 

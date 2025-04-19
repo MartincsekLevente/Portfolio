@@ -1,12 +1,12 @@
 @use "../../theme/variables" as *;
 
 .badge-container {
-    border: 2px solid #1b2047;
+    border: 0.15vw solid #1b2047;
     border-radius: 0.3vw;
     width: fit-content;
 
     .badge-overlay {
-        border: 2px solid #0f182b;
+        border: 0.15vw solid #0f182b;
         border-radius: 0.3vw;
         display: flex;
         align-items: center;
@@ -15,7 +15,7 @@
         padding: 0 1vw 0 1vw;
 
         &.hovered {
-            border: 2px solid $highlight;
+            border: 0.15vw solid $highlight;
         }
 
         .badge-text {

@@ -2,10 +2,8 @@ import './AboutSection.scss';
 import CardWithIcon from "../../components/cardWithIcon/CardWithIcon.tsx";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
-import { useState } from "react";
 
 export default function AboutSection() {
-    const [cardHovered, setCardHovered] = useState(false);
 
     return (
         <section id="about">
@@ -13,18 +11,21 @@ export default function AboutSection() {
                 <div className="about-section-title">
                     About me
                 </div>
-                <div className="about-me-card-container">
-                    <div className={`about-me-card ${cardHovered ? "card-hovered" : ""}`}
-                         onMouseEnter={() => setCardHovered(true)}
-                         onMouseLeave={() => setCardHovered(false)}>
-                        <div className="about-text">
-                            As a <span className="highlight-text">frontend developer with 2+ years of experience</span>,
-                            I confidently work both in a team and
-                            independently. I
-                            enjoy working with new technologies and continuously improving my professional skills. In my
-                            free time I like to
-                            develop <span className="highlight-text">React</span> projects and create interesting web
-                            components.
+                <div className="about-me-content-container">
+                    <div className="about-me-card-overlay">
+                        <div className="about-me-card">
+                            <div className="about-text">
+                                As a <span
+                                className="highlight-text">frontend developer with 2+ years of experience</span>,
+                                I confidently work both in a team and
+                                independently. I
+                                enjoy working with new technologies and continuously improving my professional skills.
+                                In my
+                                free time I like to
+                                develop <span className="highlight-text">React</span> projects and create interesting
+                                web
+                                components.
+                            </div>
                         </div>
                     </div>
                     <div className="about-me-small-cards">

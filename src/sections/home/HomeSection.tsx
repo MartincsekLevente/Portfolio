@@ -12,10 +12,10 @@ export default function HomeSection() {
                         M<span className="home-logo-right">L</span>
                     </div>
                     <div className="home-section-title">
-                        Hey, I am <span className="highlight-text">Levi</span> 👋
+                        Hi, my name is <br></br><span className="highlight-text">Martincsek Levente (Levi)</span>.
                     </div>
                     <div className="home-section-subtitle">
-                        I am a <span className="highlight-text">Frontend</span> developer from Hungary!
+                        I am a <span className="highlight-text">Frontend</span> developer from Hungary
                     </div>
                 </div>
             </div>

@@ -1,23 +1,23 @@
 @use "../../theme/variables" as *;
 
 .card-with-icon-container {
-    margin-left: 4vw;
     font-size: $font_size_medium;
     cursor: pointer;
+    border: 0.15vw solid #1b2047;
+    border-radius: 0.5vw;
 
     .card-overlay {
         padding-left: 1vw;
         padding-right: 1vw;
         display: flex;
         align-items: center;
-        border: 1px solid #25404a;
-        box-shadow: 0 0 8px 5px #315562;
-        border-radius: 1.5vw;
+        border: 0.15vw solid #0f182b;
+        border-radius: 0.5vw;
+        background: linear-gradient(to right, #151f53, #1b2047);
         gap: 0.5vw;
-        background: linear-gradient(in oklab, #152a32, #203A43);
 
         &.hovered {
-            box-shadow: 0 0 8px 5px #638fa0;
+            border: 0.15vw solid $highlight;
         }
 
         .card-icon {

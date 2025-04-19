@@ -29,8 +29,10 @@ export default function SkillsSection() {
     return (
         <section id="skills">
             <div className="skills-section-container">
-                <div className="skills-section-title">
-                    My Skills
+                <div className="skills-section-title-overlay">
+                    <div className="skills-section-title">
+                        My Skills
+                    </div>
                 </div>
                 <div className="skill-tree-lines-container">
                     <svg className="skill-tree-lines" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">

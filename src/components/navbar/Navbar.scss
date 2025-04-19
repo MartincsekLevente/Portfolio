@@ -6,8 +6,8 @@
     width: 100%;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0.8vh);
+    -webkit-backdrop-filter: blur(0.8vh);
     z-index: 999;
 
     .navbar-container {

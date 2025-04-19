@@ -25,7 +25,7 @@ export const PROJECTS: ProjectModel[] =
                     icon: <FaSass></FaSass>
                 }
             ],
-            bgImgUrl: "/bg-avatar-creator.png",
+            bgImgUrl: "/bg-portfolio.jpg",
             githubUrl: "https://github.com/MartincsekLevente/Portfolio",
             websiteUrl: null
         },
