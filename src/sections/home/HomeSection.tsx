@@ -5,7 +5,7 @@ export default function HomeSection() {
         <section id="home">
             <div className="home-section-container">
                 <div className="home-section-picture-container">
-                    <img className="home-section-picture" src="src/assets/profile.jpg" alt="profile-picture"></img>
+                    <img className="home-section-picture" src="/profile.jpg" alt="profile-picture"></img>
                 </div>
                 <div className="home-section-title-container">
                     <div className="home-logo">
