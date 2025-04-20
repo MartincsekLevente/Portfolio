@@ -17,7 +17,7 @@ export default function AboutSection() {
                 </FadeInWhenVisible>
                 <div className="about-me-content-container">
                     <FadeInWhenVisible
-                        direction={"right"}
+                        direction={"left"}
                         offset={15}>
                         <div className="about-me-card-overlay">
                             <div className="about-me-card">
