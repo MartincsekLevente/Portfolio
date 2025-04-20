@@ -5,6 +5,7 @@
     cursor: pointer;
     border: 0.15vw solid #1b2047;
     border-radius: 0.5vw;
+    user-select: none;
 
     .card-overlay {
         padding-left: 1vw;
