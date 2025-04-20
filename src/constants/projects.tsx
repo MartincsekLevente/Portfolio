@@ -23,11 +23,15 @@ export const PROJECTS: ProjectModel[] =
                 {
                     name: "Sass",
                     icon: <FaSass></FaSass>
+                },
+                {
+                    name: "Vercel",
+                    icon: <SiVercel></SiVercel>
                 }
             ],
             bgImgUrl: "/bg-portfolio.jpg",
             githubUrl: "https://github.com/MartincsekLevente/Portfolio",
-            websiteUrl: null
+            websiteUrl: "https://www.martincseklevente.hu"
         },
         {
             id: "1",
