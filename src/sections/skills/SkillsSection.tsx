@@ -24,13 +24,19 @@ import { FaMasksTheater } from "react-icons/fa6";
 import { DiScrum } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiLogoBlender } from "react-icons/bi";
+import { useState } from "react";
 
 export default function SkillsSection() {
+
+    const [parentNodeHover, setParentNodeHover] = useState(false);
+
     return (
         <section id="skills">
             <div className="skills-section-container">
-                <div className="skills-section-title-overlay">
-                    <div className="skills-section-title">
+                <div className="skills-section-title-overlay"
+                     onMouseEnter={() => setParentNodeHover(true)}
+                     onMouseLeave={() => setParentNodeHover(false)}>
+                    <div className={`skills-section-title ${parentNodeHover ? 'hovered' : null}`}>
                         My Skills
                     </div>
                 </div>
