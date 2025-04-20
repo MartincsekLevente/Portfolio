@@ -47,7 +47,7 @@ export default function SkillsSection() {
                 <div className="skill-tree-lines-container">
                     <FadeInWhenVisible
                         initialDelay={0.5}
-                        duration={1}
+                        duration={0.6}
                         inheritParentSize={true}>
                         <svg className="skill-tree-lines" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
                             <line x1="12" y1="0" x2="12" y2="30" stroke="#1b2047" strokeWidth="1.5"></line>
@@ -66,7 +66,7 @@ export default function SkillsSection() {
                             offset={5}
                             direction={'left'}
                             initialDelay={0.5}
-                            childDelay={0.1}>
+                            childDelay={0.06}>
                             <Badge
                                 text="HTML"
                                 icon={<FaHtml5></FaHtml5>}>
@@ -112,7 +112,7 @@ export default function SkillsSection() {
                             offset={5}
                             direction={'down'}
                             initialDelay={0.5}
-                            childDelay={0.1}>
+                            childDelay={0.06}>
                             <Badge
                                 text="DOCKER"
                                 icon={<FaDocker></FaDocker>}>
@@ -162,7 +162,7 @@ export default function SkillsSection() {
                             offset={5}
                             direction={'right'}
                             initialDelay={0.5}
-                            childDelay={0.1}>
+                            childDelay={0.06}>
                             <Badge
                                 text="JAVA"
                                 icon={<FaJava></FaJava>}>

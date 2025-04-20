@@ -6,7 +6,9 @@ export default function HomeSection() {
         <section id="home">
             <div className="home-section-container">
                 <div className="home-section-picture-container">
-                    <FadeInWhenVisible offset={15}>
+                    <FadeInWhenVisible
+                        offset={15}
+                        direction={"left"}>
                         <img className="home-section-picture"
                              loading="lazy"
                              src="/profile.jpg"
