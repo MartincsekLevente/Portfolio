@@ -1,6 +1,6 @@
 import './AboutSection.scss';
 import CardWithIcon from "../../components/cardWithIcon/CardWithIcon.tsx";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
 
 export default function AboutSection() {
@@ -35,19 +35,14 @@ export default function AboutSection() {
                             url="https://github.com/MartincsekLevente">
                         </CardWithIcon>
                         <CardWithIcon
-                            icon={<FaLinkedin></FaLinkedin>}
-                            title="LinkedIn"
-                            url="https://www.linkedin.com/in/martincseklevente/">
-                        </CardWithIcon>
-                        <CardWithIcon
-                            icon={<FaInstagram></FaInstagram>}
-                            title="Instagram"
-                            url="https://www.instagram.com/leventemartincsek/">
-                        </CardWithIcon>
-                        <CardWithIcon
                             icon={<TbFileCv></TbFileCv>}
                             title="CV"
                             url="/cv-martincsek-levente.pdf">
+                        </CardWithIcon>
+                        <CardWithIcon
+                            icon={<FaLinkedin></FaLinkedin>}
+                            title="LinkedIn"
+                            url="https://www.linkedin.com/in/martincseklevente/">
                         </CardWithIcon>
                     </div>
                 </div>
