@@ -41,8 +41,7 @@ export default function AboutSection() {
                     <div className="about-me-small-cards">
                         <FadeInWhenVisible
                             direction={"right"}
-                            initialDelay={0.5}
-                            childDelay={0.3}
+                            childDelay={0.2}
                             offset={15}>
                             <CardWithIcon
                                 icon={<FaGithub></FaGithub>}
