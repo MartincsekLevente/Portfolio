@@ -6,17 +6,19 @@ export default function HomeSection() {
         <section id="home">
             <div className="home-section-container">
                 <div className="home-section-picture-container">
-                    <FadeInWhenVisible
-                        offset={15}>
+                    <FadeInWhenVisible offset={15}>
                         <img className="home-section-picture"
+                             loading="lazy"
                              src="/profile.jpg"
-                             alt="profile-picture"></img>
+                             alt="profile-picture"
+                        />
                     </FadeInWhenVisible>
                 </div>
                 <div className="home-section-title-container">
                     <FadeInWhenVisible
+                        offset={15}
                         direction={"right"}
-                        delay={0.2}>
+                        childDelay={0.2}>
                         <div className="home-logo">
                             M<span className="home-logo-right">L</span>
                         </div>

@@ -1,4 +1,3 @@
-import './FadeInWhenVisible.scss';
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -7,16 +6,17 @@ interface FadeInWhenVisibleProps {
     direction?: "left" | "right",
     offset?: number,
     duration?: number,
-    delay?: number,
+    initialDelay?: number,
     childDelay?: number,
 }
 
 export default function FadeInWhenVisible({
                                               children,
                                               direction = "left",
-                                              offset = 10,
+                                              offset = 0,
                                               duration = 0.8,
-                                              delay = 0
+                                              initialDelay = 0,
+                                              childDelay = 0
                                           }: FadeInWhenVisibleProps) {
     const finalOffset = direction === "left" ? -offset : offset;
     const childrenArray = React.Children.toArray(children);
@@ -29,7 +29,10 @@ export default function FadeInWhenVisible({
                         key={index}
                         initial={{opacity: 0, transform: `translateX(${finalOffset}vw)`}}
                         whileInView={{opacity: 1, transform: "translateX(0vw)"}}
-                        transition={{duration: duration, delay: delay * index}}
+                        transition={{
+                            duration: duration,
+                            delay: childDelay === 0 ? initialDelay : childDelay * (index + 1)
+                        }}
                         viewport={{once: true, amount: 0.1}}
                     >
                         {child}
