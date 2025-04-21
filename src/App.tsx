@@ -15,11 +15,10 @@ export default function App() {
             <Navbar></Navbar>
             <div className="page-container">
                 <HomeSection></HomeSection>
-                <AboutSection></AboutSection>
-                <SkillsSection></SkillsSection>
+                {/*<SkillsSection></SkillsSection>
                 <ExperienceSection></ExperienceSection>
                 <ProjectsSection></ProjectsSection>
-                <ContactSection></ContactSection>
+                <ContactSection></ContactSection>*/}
             </div>
         </>
     )

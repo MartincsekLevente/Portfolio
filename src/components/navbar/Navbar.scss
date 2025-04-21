@@ -54,3 +54,16 @@
     }
 }
 
+@media (max-width: 480px) {
+    .navbar-bg {
+        background-color: red;
+        .navbar-container {
+            .navbar-home-title {
+                font-size: 3wh;
+                .navbar-home-title-right {
+
+                }
+            }
+        }
+    }
+}
