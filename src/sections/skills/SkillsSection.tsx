@@ -39,7 +39,7 @@ export default function SkillsSection() {
                     <div className="skills-section-title-overlay"
                          onMouseEnter={() => setParentNodeHover(true)}
                          onMouseLeave={() => setParentNodeHover(false)}>
-                        <div className={`skills-section-title ${parentNodeHover ? 'hovered' : null}`}>
+                        <div className={`skills-section-title ${parentNodeHover ? 'hovered' : ''}`}>
                             My Skills
                         </div>
                     </div>

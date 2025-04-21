@@ -15,7 +15,7 @@ export default function NavbarItem({title, navigateTo}: NavbarItemProps) {
              onClick={() => document.querySelector(navigateTo)!.scrollIntoView({behavior: 'smooth'})}
              onMouseEnter={() => setHovered(true)}
              onMouseLeave={() => setHovered(false)}>
-            <div className={`navbar-item-text ${hovered ? 'hovered' : null}`}>
+            <div className={`navbar-item-text ${hovered ? 'hovered' : ''}`}>
                 {title}
             </div>
         </div>
