@@ -15,7 +15,7 @@
         user-select: none;
 
         &.burger {
-            font-size: 11vh;
+            font-size: min(11vh, 15vw);
             margin-left: auto;
             margin-right: 2rem;
         }
