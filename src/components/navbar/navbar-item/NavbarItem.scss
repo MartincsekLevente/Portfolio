@@ -5,7 +5,7 @@
     cursor: pointer;
 
     .navbar-item-text {
-        font-size: $font_size_text;
+        font-size: 1.2rem;
         font-weight: bold;
         color: transparent;
         background: linear-gradient(to top, $highlight 0%, white 100%);
@@ -13,6 +13,12 @@
         transition: background-position 0.3s ease;
         background-size: 100% 200%;
         user-select: none;
+
+        &.burger {
+            font-size: 11vh;
+            margin-left: auto;
+            margin-right: 2rem;
+        }
 
         &.hovered {
             background-position: bottom;

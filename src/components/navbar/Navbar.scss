@@ -8,18 +8,18 @@
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.8rem);
     -webkit-backdrop-filter: blur(0.8rem);
-    z-index: 999;
+    z-index: 5;
 
     .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 5rem;
+        height: 6.5rem;
         width: $content_width;
 
         .navbar-home-title {
             display: flex;
-            font-size: 3vw;
+            font-size: 5rem;
             font-family: Jura, "sans-serif";
             font-weight: bold;
             user-select: none;
@@ -35,9 +35,9 @@
 
             .navbar-home-title-right {
                 position: relative;
-                left: -0.875rem;
+                left: -1.468rem;
                 color: $highlight;
-                font-size: 3.1vw;
+                font-size: 5.1rem;
                 transition: color 0.5s ease;
 
                 &.hovered {
@@ -84,7 +84,6 @@
                 display: block;
                 padding-right: 2rem;
             }
-
         }
     }
 }
