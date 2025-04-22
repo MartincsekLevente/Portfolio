@@ -38,27 +38,35 @@ export default function AboutSection() {
                             </div>
                         </div>
                     </FadeInWhenVisible>
-                    <div className="about-me-small-cards">
+                    <div className="about-me-socials">
                         <FadeInWhenVisible
-                            direction={"right"}
-                            childDelay={0.2}
-                            offset={15}>
-                            <CardWithIcon
-                                icon={<FaGithub></FaGithub>}
-                                title="GitHub"
-                                url="https://github.com/MartincsekLevente">
-                            </CardWithIcon>
-                            <CardWithIcon
-                                icon={<TbFileCv></TbFileCv>}
-                                title="CV"
-                                url="/cv-martincsek-levente.pdf">
-                            </CardWithIcon>
-                            <CardWithIcon
-                                icon={<FaLinkedin></FaLinkedin>}
-                                title="LinkedIn"
-                                url="https://www.linkedin.com/in/martincseklevente/">
-                            </CardWithIcon>
+                            duration={1.5}>
+                            <div className="about-me-socials-text">
+                                Social links
+                            </div>
                         </FadeInWhenVisible>
+                        <div className="about-me-small-cards">
+                            <FadeInWhenVisible
+                                direction={"right"}
+                                childDelay={0.2}
+                                offset={15}>
+                                <CardWithIcon
+                                    icon={<FaGithub></FaGithub>}
+                                    title="GitHub"
+                                    url="https://github.com/MartincsekLevente">
+                                </CardWithIcon>
+                                <CardWithIcon
+                                    icon={<TbFileCv></TbFileCv>}
+                                    title="CV"
+                                    url="/cv-martincsek-levente.pdf">
+                                </CardWithIcon>
+                                <CardWithIcon
+                                    icon={<FaLinkedin></FaLinkedin>}
+                                    title="LinkedIn"
+                                    url="https://www.linkedin.com/in/martincseklevente/">
+                                </CardWithIcon>
+                            </FadeInWhenVisible>
+                        </div>
                     </div>
                 </div>
             </div>

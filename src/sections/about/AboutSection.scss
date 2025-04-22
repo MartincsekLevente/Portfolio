@@ -4,13 +4,10 @@
     height: 100vh;
 
     .about-section-container {
-        width: inherit;
-        height: inherit;
         padding-top: 17vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-
 
         .about-section-title {
             font-size: $font_size_mediumbig;
@@ -40,10 +37,70 @@
                 }
             }
 
-            .about-me-small-cards {
-                display: flex;
-                justify-content: space-between;
-                margin: 0 3vw 0 3vw;
+            .about-me-socials {
+                .about-me-socials-text {
+                    display: none;
+                }
+
+                .about-me-small-cards {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 3vw 0 3vw;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .about-section-container {
+            padding-top: 5rem;
+
+            .about-section-title {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            .about-me-content-container {
+                gap: 2rem;
+
+                .about-me-card-overlay {
+                    margin: 0 1rem 0 1rem;
+                    border: 0.2rem solid #1b2047;
+                    border-radius: 0.8rem;
+
+                    .about-me-card {
+                        padding: 1rem;
+                        border: 0.2rem solid #0f182b;
+                        border-radius: 0.8rem;
+
+                        .about-text {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .about-me-socials {
+                    display: flex;
+                    position: relative;
+                    flex-direction: row-reverse;
+
+                    .about-me-socials-text {
+                        writing-mode: vertical-lr;
+                        font-size: 2.5rem;
+                        transform-origin: 0 0;
+                        display: inline-block;
+                        user-select: none;
+                    }
+
+                    .about-me-small-cards {
+                        display: flex;
+                        gap: 1rem;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin: 0 1rem 0 1rem;
+                    }
+                }
+
             }
         }
     }
