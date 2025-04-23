@@ -1,7 +1,7 @@
 @use "../../theme/variables" as *;
 
 #home {
-    height: 100vh;
+    height: max(45rem, 100vh);
 
     .home-section-container {
         height: inherit;
