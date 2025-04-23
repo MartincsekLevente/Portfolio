@@ -110,8 +110,9 @@
             }
 
             .skill-tree-lines-container {
-                top: -4rem;
-                height: 61rem;
+                padding-top: 8rem;
+                top: 0;
+                height: 30rem;
 
                 .skill-tree-lines {
 
@@ -133,7 +134,7 @@
 
             .badge-anchor-middle {
                 left: 0.2rem;
-                top: 43rem;
+                top: 41rem;
 
                 .badge-wrapper-middle {
                     gap: 0.4rem;
