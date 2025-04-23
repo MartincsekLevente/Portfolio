@@ -41,3 +41,43 @@
     }
 
 }
+
+@media(max-width: 1024px) {
+    .multi-display-card-container {
+        width: 100%;
+        border: 0.2rem solid #1b2047;
+        border-radius: 0.8rem;
+
+        .multi-display-card-overlay {
+            border: 0.2rem solid #0f182b;
+            border-radius: 0.8rem;
+            padding: 1rem;
+
+            .multi-display-card-title {
+                font-size: 2rem;
+            }
+
+            .multi-display-card-subtitle {
+                font-size: 1.2rem;
+                padding-left: 0.5rem;
+            }
+
+            .multi-display-card-description {
+                font-size: 1rem;
+                padding-left:  0.5rem;
+            }
+
+            .multi-display-card-list-container {
+                font-size: 0.8rem;
+
+                .multi-display-card-list-item {
+
+                    &:not(:last-child) {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

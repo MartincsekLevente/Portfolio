@@ -87,7 +87,9 @@
                     flex-direction: row-reverse;
 
                     .about-me-socials-text {
-                        writing-mode: vertical-lr;
+                        writing-mode: vertical-rl;
+                        text-orientation: mixed;
+                        white-space: nowrap;
                         font-size: 2.5rem;
                         transform-origin: 0 0;
                         display: inline-block;
