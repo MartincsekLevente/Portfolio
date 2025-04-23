@@ -1,7 +1,7 @@
 @use "../../theme/variables" as *;
 
 #about {
-    height: max(50rem, 100vh);
+    height: max(50rem, 100dvh);
 
     .about-section-container {
         padding-top: 17vh;
