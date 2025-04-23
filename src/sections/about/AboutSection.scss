@@ -1,10 +1,10 @@
 @use "../../theme/variables" as *;
 
 #about {
-    height: max(50rem, 100lvh);
+    height: fit-content;
+    padding-top: 15rem;
 
     .about-section-container {
-        padding-top: 17vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -50,11 +50,13 @@
             }
         }
     }
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    #about {
+        padding-top: 5rem;
+
         .about-section-container {
-            padding-top: 5rem;
-
             .about-section-title {
                 font-size: 3rem;
                 margin-bottom: 2rem;

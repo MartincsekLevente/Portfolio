@@ -1,7 +1,8 @@
 @use "../../theme/variables" as *;
 
 #home {
-    height: max(45rem, 100lvh);
+    height: fit-content;
+    padding-top: 15rem;
 
     .home-section-container {
         height: inherit;
@@ -43,14 +44,18 @@
         .home-section-picture-container {
 
             .home-section-picture {
-                width: min(25vw, 45vh);
+                width: max(25vw, 45vh);
                 border-radius: 2rem;
                 user-select: none;
             }
         }
     }
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    #home {
+        padding-top: 0;
+
         .home-section-container {
             flex-direction: column;
             padding-top: 8rem;
