@@ -23,6 +23,9 @@ html, body {
             width: $content_width;
             justify-self: center;
             height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
 
             .highlight-text {
                 color: $highlight;
