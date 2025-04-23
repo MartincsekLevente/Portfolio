@@ -2,7 +2,8 @@
 
 #skills {
     height: fit-content;
-    padding-top: 15rem;
+    margin-top: 15rem;
+    padding-top: 3rem;
 
     .skills-section-container {
         display: flex;
@@ -89,7 +90,8 @@
 
 @media(max-width: 1024px) {
     #skills {
-        padding-top: 2rem;
+        margin-top: 0;
+        padding-top: 3rem;
 
         .skills-section-container {
             .skills-section-title-overlay {

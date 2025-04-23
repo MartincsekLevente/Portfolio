@@ -29,3 +29,23 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .stack-card-container {
+        border-radius: 0.4rem;
+        border: 0.15rem solid #0f182b;
+
+        .stack-card-overlay {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.4rem;
+            border: 0.15rem solid #1b2047;
+            font-size: 1.3rem;
+            padding: 1rem;
+
+            &.hovered {
+                border: 0.15rem solid $highlight;
+            }
+        }
+    }
+}
