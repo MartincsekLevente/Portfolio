@@ -8,9 +8,12 @@
     background: linear-gradient(to right, #151f53, #1b2047);
 
     .double-link-button-text {
-        padding: 0 0 0 0.5vw;
+        display: flex;
+        padding: 0 0.5vw 0 0.5vw;
         user-select: none;
         cursor: pointer;
+        gap: 0.5rem;
+        align-items: center;
     }
 
     .project-open-url-button {
@@ -39,7 +42,7 @@
         border: 0.2rem solid #0f182b;
 
         .double-link-button-text {
-            padding: 0 0 0 0.4rem;
+            padding: 0 0.5rem 0 0.5rem;
         }
 
         .project-open-url-button {
