@@ -29,6 +29,10 @@ html, body {
             .highlight-text {
                 color: $highlight;
             }
+
+            div {
+                -webkit-tap-highlight-color: transparent;
+            }
         }
     }
 }
