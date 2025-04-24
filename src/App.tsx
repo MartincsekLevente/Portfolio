@@ -6,6 +6,7 @@ import SkillsSection from "./sections/skills/SkillsSection.tsx";
 import ExperienceSection from "./sections/experience/ExperienceSection.tsx";
 import ProjectsSection from "./sections/projects/ProjectsSection.tsx";
 import ContactSection from "./sections/contact/ContactSection.tsx";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function App() {
 
@@ -21,6 +22,7 @@ export default function App() {
                 <ProjectsSection/>
                 <ContactSection/>
             </div>
+            <SpeedInsights/>
         </>
     )
 }
