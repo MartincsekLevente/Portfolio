@@ -39,7 +39,7 @@ export default function SkillsSection() {
                     <div className="skills-section-title-overlay"
                          onMouseEnter={() => setParentNodeHover(true)}
                          onMouseLeave={() => setParentNodeHover(false)}>
-                        <div className={`skills-section-title ${parentNodeHover ? 'hovered' : null}`}>
+                        <div className={`skills-section-title ${parentNodeHover ? 'hovered' : ''}`}>
                             My Skills
                         </div>
                     </div>
@@ -50,13 +50,19 @@ export default function SkillsSection() {
                         duration={0.6}
                         inheritParentSize={true}>
                         <svg className="skill-tree-lines" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-                            <line x1="12" y1="0" x2="12" y2="30" stroke="#1b2047" strokeWidth="1.5"></line>
-                            <line x1="12.8" y1="30" x2="-70" y2="30" stroke="#1b2047" strokeWidth="1.5"></line>
-                            <line x1="-70" y1="29.2" x2="-70" y2="45" stroke="#1b2047" strokeWidth="1.5"></line>
-                            <line x1="50" y1="0" x2="50" y2="100" stroke="#1b2047" strokeWidth="1.5"></line>
-                            <line x1="88" y1="0" x2="88" y2="30" stroke="#1b2047" strokeWidth="1.5"></line>
-                            <line x1="87.2" y1="30" x2="170" y2="30" stroke="#1b2047" strokeWidth="1.5"></line>
-                            <line x1="170" y1="29.2" x2="170" y2="45" stroke="#1b2047" strokeWidth="1.5"></line>
+                            <line className="skill-tree-side-line" x1="12" y1="0" x2="12" y2="30" stroke="#1b2047"
+                                  strokeWidth="1.5"></line>
+                            <line className="skill-tree-side-line" x1="12.8" y1="30" x2="-70" y2="30" stroke="#1b2047"
+                                  strokeWidth="1.5"></line>
+                            <line className="skill-tree-side-line" x1="-70" y1="29.2" x2="-70" y2="45" stroke="#1b2047"
+                                  strokeWidth="1.5"></line>
+                            <line x1="50" y1="0" x2="50" y2="120" stroke="#1b2047" strokeWidth="1.5"></line>
+                            <line className="skill-tree-side-line" x1="88" y1="0" x2="88" y2="30" stroke="#1b2047"
+                                  strokeWidth="1.5"></line>
+                            <line className="skill-tree-side-line" x1="87.2" y1="30" x2="170" y2="30" stroke="#1b2047"
+                                  strokeWidth="1.5"></line>
+                            <line className="skill-tree-side-line" x1="170" y1="29.2" x2="170" y2="45" stroke="#1b2047"
+                                  strokeWidth="1.5"></line>
                         </svg>
                     </FadeInWhenVisible>
                 </div>

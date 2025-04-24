@@ -24,7 +24,7 @@ export default function ContactSection() {
                     <div className="contact-button-container"
                          onMouseEnter={() => setButtonHovered(true)}
                          onMouseLeave={() => setButtonHovered(false)}>
-                        <div className={`contact-button ${buttonHovered ? 'hovered' : null}`}
+                        <div className={`contact-button ${buttonHovered ? 'hovered' : ''}`}
                              onClick={() => window.location.href = 'mailto:martincsekl@gmail.com'}>
                             Send me an email!
                             <IoMdMail></IoMdMail>

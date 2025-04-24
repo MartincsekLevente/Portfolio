@@ -6,39 +6,38 @@
     width: 100%;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(0.8vh);
-    -webkit-backdrop-filter: blur(0.8vh);
-    z-index: 999;
+    backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(0.8rem);
+    z-index: 5;
 
     .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 8vh;
+        height: 6.5rem;
         width: $content_width;
 
         .navbar-home-title {
             display: flex;
-            font-size: 3vw;
+            font-size: 5rem;
             font-family: Jura, "sans-serif";
             font-weight: bold;
             user-select: none;
             align-items: center;
             line-height: 1;
-            padding-bottom: 0.5vw;
             cursor: pointer;
             color: $primary;
             transition: color 0.5s ease;
 
             &.hovered {
-                color: #4a9cc6;
+                color: $highlight;
             }
 
             .navbar-home-title-right {
                 position: relative;
-                left: -0.89vw;
-                color: #4a9cc6;
-                font-size: 3.1vw;
+                left: -1.468rem;
+                color: $highlight;
+                font-size: 5.1rem;
                 transition: color 0.5s ease;
 
                 &.hovered {
@@ -51,6 +50,40 @@
             display: flex;
             gap: 2vw;
         }
+
+        .burger-container {
+            display: none;
+        }
     }
 }
 
+@media (max-width: 1024px) {
+    .navbar-bg {
+        justify-content: space-between;
+
+
+        .navbar-container {
+            height: 5rem;
+            width: 100%;
+
+            .navbar-home-title {
+                padding-left: 2rem;
+                font-size: 3rem;
+
+                .navbar-home-title-right {
+                    left: -0.875rem;
+                    font-size: 3rem;
+                }
+            }
+
+            .navbar-items {
+                display: none;
+            }
+
+            .burger-container {
+                display: block;
+                padding-right: 2rem;
+            }
+        }
+    }
+}

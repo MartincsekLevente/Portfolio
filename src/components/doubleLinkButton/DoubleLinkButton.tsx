@@ -13,12 +13,10 @@ export default function DoubleLinkButton({githubLink, websiteLink}: DoubleLinkBu
             <div className="project-open-url-button" onClick={() => window.open(githubLink, '_blank')}>
                 <FaGithub></FaGithub>
             </div>
-            <div className="double-link-button-text">Open</div>
-            {websiteLink ?
-                <div
-                    className="project-open-url-button" onClick={() => window.open(websiteLink, '_blank')}>
-                    <PiGlobeHemisphereEastBold></PiGlobeHemisphereEastBold>
-                </div> : null}
+            <div className="double-link-button-text" onClick={() => {
+                return websiteLink ? window.open(websiteLink, '_blank') : null
+            }}>Open <PiGlobeHemisphereEastBold></PiGlobeHemisphereEastBold>
+            </div>
         </div>
     );
 }

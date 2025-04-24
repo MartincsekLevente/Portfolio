@@ -1,7 +1,7 @@
 @use "../../theme/variables" as *;
 
 #projects {
-    height: 100vh;
+    height: fit-content;
 
     .projects-section-container {
         width: inherit;
@@ -55,7 +55,7 @@
                 position: absolute;
                 font-size: 6vw;
                 top: 19vh;
-                left: 46.5vw;
+                right: 0;
                 cursor: pointer;
                 user-select: none;
             }
@@ -79,6 +79,82 @@
                     border-radius: 1vw;
                     border: 0.2vw solid #0f182b;
                     user-select: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    #projects {
+        .projects-section-container {
+            .projects-section-title {
+                font-size: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            .projects-showcase-container {
+                border-radius: 0.8rem;
+                width: fit-content;
+                border: 0.2rem solid #1b2047;
+
+                .projects-showcase-overlay {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0.8rem;
+                    border: 0.2rem solid #0f182b;
+
+                }
+
+                .project-title {
+                    position: absolute;
+                    left: 3%;
+                    top: auto;
+                    bottom: 5%;
+                    font-size: 1.2rem;
+                }
+
+                .project-links {
+                    position: absolute;
+                    left: auto;
+                    right: 3%;
+                    bottom: 4%;
+                }
+
+                .projects-showcase-left-arrow {
+                    position: absolute;
+                    font-size: 3rem;
+                    left: 1%;
+                    top: 40%;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .projects-showcase-right-arrow {
+                    position: absolute;
+                    font-size: 3rem;
+                    top: 40%;
+                    right: 1%;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .projects-stack-container {
+                    padding: 0.5rem 0.5rem 0 0;
+                    gap: 0.3rem;
+                }
+
+                .project-image-container {
+                    justify-content: center;
+                    margin: 1rem 0 4rem 0;
+                    border-radius: 0.8rem;
+                    border: 0;
+
+                    .project-image {
+                        width: 80%;
+                        border-radius: 0.8rem;
+                        border: 0.2rem solid #0f182b;
+                    }
                 }
             }
         }

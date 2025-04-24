@@ -20,7 +20,6 @@
         }
 
         .badge-text {
-            border-radius: 0.3vw;
             color: $highlight;
             font-family: Jura, "sans-serif";
             font-weight: 800;
@@ -29,6 +28,28 @@
         .badge-icon {
             padding-right: 0.5vw;
             display: flex;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .badge-container {
+        border: 0.15rem solid #1b2047;
+        border-radius: 0.3rem;
+
+        .badge-overlay {
+            border: 0.15rem solid #0f182b;
+            border-radius: 0.3rem;
+            font-size: 1.2rem;
+            padding: 0 0.4rem 0 0.4rem;
+
+            &.hovered {
+                border: 0.15rem solid $highlight;
+            }
+
+            .badge-icon {
+                padding-right: 0.3rem;
+            }
         }
     }
 }

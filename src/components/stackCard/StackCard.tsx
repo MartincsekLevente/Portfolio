@@ -18,7 +18,7 @@ export default function StackCard({name, icon}: StackCardProps) {
             <div className="stack-card-container"
                  onMouseEnter={() => setHovered(true)}
                  onMouseLeave={() => setHovered(false)}>
-                <div className={`stack-card-overlay ${hovered ? 'hovered' : null}`}>
+                <div className={`stack-card-overlay ${hovered ? 'hovered' : ''}`}>
                     <div className="stack-card-icon">
                         {icon}
                     </div>

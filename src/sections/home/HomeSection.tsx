@@ -28,7 +28,7 @@ export default function HomeSection() {
                             Hi, my name is
                         </div>
                         <div className="home-section-title">
-                            <span className="highlight-text">Martincsek Levente (Levi)</span>.
+                            <span className="highlight-text" style={{fontWeight: 500}}>Martincsek Levente</span>
                         </div>
                         <div className="home-section-subtitle">
                             I am a <span className="highlight-text">Frontend</span> developer from Hungary

@@ -1,12 +1,11 @@
 @use "../../theme/variables" as *;
 
 #skills {
-    height: 100vh;
+    height: fit-content;
+    margin-top: 15rem;
+    padding-top: 3rem;
 
     .skills-section-container {
-        width: inherit;
-        height: inherit;
-        padding-top: 7vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,7 +14,7 @@
         .skills-section-title-overlay {
             border: 0.25vw solid #1b2047;
             border-radius: 0.5vw;
-            margin-top: 4vh;
+            margin-top: 8vh;
             user-select: none;
 
             .skills-section-title {
@@ -86,5 +85,77 @@
             }
         }
 
+    }
+}
+
+@media(max-width: 1024px) {
+    #skills {
+        margin-top: 0;
+        padding-top: 3rem;
+
+        .skills-section-container {
+            .skills-section-title-overlay {
+                border: 0.2rem solid #1b2047;
+                border-radius: 0.8rem;
+                margin-top: 3.8rem;
+
+                .skills-section-title {
+                    font-size: 3rem;
+                    padding: 0.6rem 2rem 0.6rem 2rem;
+                    border: 0.2rem solid #0f182b;
+                    border-radius: 0.8rem;
+
+                    &.hovered {
+                        border: 0.2rem solid $highlight;
+                    }
+                }
+            }
+
+            .skill-tree-lines-container {
+                padding-top: 8rem;
+                top: 0;
+                height: 31rem;
+
+                .skill-tree-lines {
+
+                    .skill-tree-side-line {
+                        display: none
+                    }
+                }
+            }
+
+            .badge-anchor-left {
+                left: 8vw;
+                top: 12rem;
+
+                .badge-wrapper-left {
+                    justify-content: flex-end;
+                    gap: 0.4rem;
+                }
+            }
+
+            .badge-anchor-middle {
+                left: 0.2rem;
+                top: 41rem;
+
+                .badge-wrapper-middle {
+                    gap: 0.4rem;
+                    width: 90vw;
+
+                }
+            }
+
+            .badge-anchor-right {
+                left: 52vw;
+                top: 12rem;
+
+                .badge-wrapper-right {
+                    width: 32vw;
+                    gap: 0.4rem;
+                    justify-content: flex-start;
+                }
+            }
+
+        }
     }
 }

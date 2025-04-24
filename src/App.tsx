@@ -12,14 +12,14 @@ export default function App() {
     return (
         <>
             <div className="page-bg"></div>
-            <Navbar></Navbar>
+            <Navbar/>
             <div className="page-container">
-                <HomeSection></HomeSection>
-                <AboutSection></AboutSection>
-                <SkillsSection></SkillsSection>
-                <ExperienceSection></ExperienceSection>
-                <ProjectsSection></ProjectsSection>
-                <ContactSection></ContactSection>
+                <HomeSection/>
+                <AboutSection/>
+                <SkillsSection/>
+                <ExperienceSection/>
+                <ProjectsSection/>
+                <ContactSection/>
             </div>
         </>
     )
